@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router, Route, Redirect, Switch} from 'react-router-dom'
+import {BrowserRouter as Router, Route,Switch} from 'react-router-dom'
 import Home from 'pages/home/index'
 import Layout from 'component/layout/index'
 
@@ -10,7 +10,8 @@ class App extends Component {
         <Layout>
           <Switch>
             <Route path='/' component={Home}/>
-            <Redirect from='*' to='/' />
+            <Route path='/product' component={Home}/>
+            <Route path='/product.category' component={Home}/>
           </Switch>
         </Layout>
       </Router>  

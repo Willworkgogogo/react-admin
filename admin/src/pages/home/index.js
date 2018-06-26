@@ -1,14 +1,16 @@
-import React, {Component} from 'react';
-import './index.css';
+import React, { Component } from 'react'
+import PageTitle from 'component/page-title/index'
+import './index.css'
 
-class Home extends Component{
+class Home extends Component {
   render() {
     return (
       <div id="page-wrapper">
-          <h1>home component</h1>
-          <button className="btn btn-primary">test</button>
+        <PageTitle title="首页" />
+        <div className="row">
+          <div className="col-md-12">hello</div>
+        </div>
       </div>
-      
     )
   }
 }
